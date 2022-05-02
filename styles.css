@@ -1,45 +1,60 @@
-
-
 /* INDEX HTML PAGE */
+h2{
+  text-align: center;
+  padding: 10%;
+}
+
 /*title section*/
 
 .logoName{
-  text-align: center;
-  padding: 5% 10%;
+    text-align: center;
+    background-color: #F9891A;
+    padding-bottom: 2%;
 }
-
+.LogoNameimg{
+  height: auto;
+  width: auto;
+}
 /*description section*/
-#description{
-  padding-bottom: 5%;
-}
+.description-img{
+  height: 100%;
+  width: 100%;
 
+}
 .description-text-container{
   text-align: center;
+
 }
 .description-text{
   padding: 0 3%;
+
 }
+
 /*buttons section*/
 #buttons{
   text-align: center;
-  padding: 6% 20% 6%;
+  padding: 3% 20% 5%;
+  background-color:#F9891A;
 }
 .text-btn{
-  line-height: 1.5rem;
+  line-height: 2.0rem;
   padding-bottom: 3%;
+
 }
 .sign-btn{
   margin:0 1.5%;
 }
+.login-btn{
+  margin:0 1.5%;
+
+}
 
 /*footer section*/
 #footer{
-  margin-top: 3%;
+
   text-align: center;
   background-color: #EEEEEE;
   line-height: 3;
-
-
 }
 .footer-img{
   color: #11999E;
@@ -48,9 +63,7 @@
   text-decoration: none;
 }
 
-
-
-
+---------------------------------
 
 /* LOG IN HTML PAGE*/
 
@@ -60,43 +73,51 @@
 }
 
 /* LOGIN SECTION */
-#logIn{
-    padding: 0 3%;
+.col-md-6 {
+  height: 94vh;
+  background-color: #F9891A;
+  padding:  15% 0;
 }
 .logIn{
-  padding: 15% 10%;
+    padding: 10% 0;
+
 }
+
 .login-form{
   padding: 0 0 2%;
   line-height: 2;
 }
-
 .login-form-container{
   padding: 0 15%;
 }
+.loginpage-image{
+    margin-top: 7%;
 
 
-/* SIGN IN HTML PAGE*/
+    width: 100%;
+}
+
+--------------------------------
+/* SIGN UP HTML PAGE*/
+
 
 /* logo section*/
 #logo-signin{
-  text-align: center;
-  padding: 2rem 3% 5rem;
+  text-align:right;
+}
+div.container-fluid{
+	 text-align:center;
 }
 
 /*SIGN IN SECTION */
-
 ::-webkit-input-placeholder {
    text-align: center;
-
 }
-
 .date-input {
   text-align: center;
 }
-
 .signin-form-container{
-  padding: 0 30%;
+  padding: 8% 28%;
 }
 .signin-form{
   margin-bottom: 10px;
@@ -104,3 +125,81 @@
 .signin-btn{
   margin-top: 30px;
 }
+----------------------------
+/* userpage HTML PAGE */
+
+
+----------------------------
+/* Title PAGE */
+
+.listtitle{
+  float:left;
+}
+
+nav{
+  background-color:#F9891A;
+
+ }
+.search{
+}
+
+
+.icon-title{
+  margin: 20px 20px;
+  color: white;
+}
+ .dropbtn {
+
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+
+ }
+.navbar-img-logo{
+  padding-left: 20px;
+}
+ .dropdown {
+   float:left;
+   display: inline-block;
+ }
+
+ .dropdown-content {
+   left:0;
+   display: none;
+   position: absolute;
+   right: 0;
+   background-color: #f9f9f9;
+   min-width: 160px;
+
+   z-index: 1;
+ }
+
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+
+ .dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+
+
+
+
+ .title-text-area{
+   padding: 0 20%;
+ }
+ .title-text-area h1{
+   text-align: center;
+   font-family: 'Play', sans-serif;
+   font-size: 5rem;
+   margin: 3rem 0 6rem 0;
+ }
+ .title-img{
+   width: 100%;
+ }

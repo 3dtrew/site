@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="el" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+	  <!-- CSS file link-->
+    <link rel="stylesheet" href="styles.css">
+	<!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>User page</title>
+</head>
+<style>
+    .menubar{
+            overflow: hidden;
+            background-color: #F9891A;
+        }
+        .menubar img{
+            float: left;
+            width: 10%;
+            padding-left: 1%;
+        }
+        .dropmenu{
+            float: left;
+            overflow: hidden;
+        }
+        .dropmenu .arrowbt{
+            font-size: 150%;
+            text-align: center;
+            padding-top: 20%;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+
+        }
+        .dropmenu:hover .arrowbt{
+            background-color: black;
+            text-align: center;
+        }
+        .menu{
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+
+        }
+        .menu a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .menu a:hover{
+            background-color: #F9891A;
+        }
+        .dropmenu:hover .menu{
+            display: block;
+        }
+        .articles{
+            padding-left: 15%;
+            padding-left: 15%;
+            padding-top: 5%;
+            background: #f1f1f1;
+        }
+        .article{
+            background-color: white;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        .article img{
+            width: 300px;
+        }
+        .menubar .search{
+            padding-left: 40%;
+            margin-top: 1%;
+        }
+		.btn {
+		   position: relative;
+           background-color: white;
+           border: none;
+           color: #F9891A ;
+           padding: 1% 1% 1% 1%;
+           font-size: 26px;
+           cursor: pointer;
+}
+.icon-button {
+   position: relative;
+   padding: 1% 1% 1% 1%;
+   color: #F9891A;
+   background:#ffffff;
+   border: none;
+   font-size: 26px;
+ cursor: pointer;
+
+}
+
+.icon-button__badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  font-size:16px;
+  background: #e0e004;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+</style>
+
+<body>
+    <div class="menubar">
+        <img src="img/logo2.png">
+        <div class="dropmenu">
+            <button class="arrowbt">Μενού
+                <i class="fa fa-caret-down">
+                </i>
+            </button>
+            <div class="menu">
+                <a herf="#">Ρυθμίσεις</a>
+                <a herf="#">Όροι Χρήσης</a>
+                <a herf="#">Απόρρητο</a>
+				        <a herf="#">πληροφορίες</a>
+				        <a herf="#">Βοήθεια</a>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Αναζήτηση...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+	<div>
+	<button class="btn"><i class="fa fa-home"></i></button>
+
+	  <button type="button" class="icon-button">
+       <span class="material-icons">notifications</span>
+       <span class="icon-button__badge">2</span>
+    </button>
+
+	</div>
+
+    <div class="articles">
+        <div class="row">
+            <div class="column">
+                <div class="article">
+                    <h2>ΤΙΤΛΟΣ ΑΡΘΡΟΥ</h2>
+                    <h5>11/1/1111</h5>
+                    <img src="img/buttefly.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="article">
+                    <h2>ΤΙΤΛΟΣ ΑΡΘΡΟΥ</h2>
+                    <h5>2/22/2222</h5>
+                    <img src="img/vol2.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="article">
+                    <h2>ΤΙΤΛΟΣ ΑΡΘΡΟΥ</h2>
+                    <h5>3/33/3333</h5>
+                    <img src="img/vol.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="article">
+                    <h2>ΤΙΤΛΟΣ ΑΡΘΡΟΥ</h2>
+                    <h5>4/44/4444</h5>
+                    <img src="img/volunteer.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="article">
+                    <h2>ΤΙΤΛΟΣ ΑΡΘΡΟΥ</h2>
+                    <h5>5/55/5555</h5>
+                    <img src="img/diff.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="article">
+                    <h2>ΤΙΤΛΟΣ ΑΡΘΡΟΥ</h2>
+                    <h5>6/66/6666</h5>
+                    <img src="img/pic.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
